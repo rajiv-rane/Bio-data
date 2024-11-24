@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    min-height: 80vh; /* Ensures the main content takes up most of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    padding-left: 30px; /* Adds padding to the left for text */
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Keeps the aspect ratio intact */
+    margin-left: 20px;
+    border-radius: 10px;
+    float: right; /* Align image to the right */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    text-align: left; /* Left-align the text */
+    margin-bottom: 20px;
+    padding-right: 250px; /* Makes space for the image on the right */
+}
+
+h2 {
+    color: #003366;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    width: 100%;
+    clear: both;
+}
+
+footer a {
+    color: lightcyan;
+}
+
+.social-links {
+    display: flex;            /* Use flexbox for alignment */
+    justify-content: center;  /* Center the items horizontally */
+    align-items: center;      /* Center the items vertically if needed */
+    margin-top: 10px;
+}
+
+.social-links h3 {
+    color: #003366;
+    margin-right: 15px; /* Adds space between the heading and the links */
+}
+
+.social-links a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px; /* Space between the links */
+}
+
+.social-links a:hover {
+    color: #00509e; /* Hover effect */
+}
+
+/* Resume Section */
+.resume-profile,
+.biodata, 
+.education,
+.work-experience {
+    text-align: left;
+    padding-right: 200px; /* Space for image */
+}
+
+/* Making the biodata section responsive */
+.biodata p, .education p, .work-experience p {
+    margin: 10px 0;
+}
+
+/* Resume Project Styling */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #003366;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+/* Adjusting layout for smaller screens */
+@media (max-width: 768px) {
+    .profile-pic {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    main {
+        padding-left: 15px;
+    }
+    .resume-profile, .biodata, .education, .work-experience {
+        padding-right: 0;
+    }
+}
